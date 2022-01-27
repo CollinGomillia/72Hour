@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _72Hour.Post
+namespace _72Hour.Data
 {
     public class Post
     {
@@ -17,6 +17,7 @@ namespace _72Hour.Post
         public string Text { get; set; }
         [Required]
         public Guid AuthorId { get; set; }
-
+        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }
